@@ -1,0 +1,143 @@
+def remove_duplicates1(string):
+    new_string=''''.join(OrderedDict.fromkeys(string))
+    if new_string:
+       return(new_string,len(string)-len(new_string))
+    else:
+       print("provide only alphabets")
+s=remove(duplicates1(string)
+print(string,'after duplicates removed ordered is:',s)
+#without order of the string
+def remove_duplicates2(string):
+    new_string=''''.join(set(string))
+    if new_string:
+         return (new_string,len(string)-len(new_string))
+    else:
+         print("provide any alphabets")
+s=remove_duplicates2(string)
+print(string,'after duplicates removed ordered is::',s)
+b)
+11=[]
+37=[]
+while(True):
+   p=int(input("enter number of elements for list1:"))
+   q=int(input("enter number of elements for list2:"))
+   if(n!=m):
+      print("enter same elements for the list")
+   else:
+      break
+print("enter elements into list1:")
+for i in range(0,q):
+    ele=int(input("enter element:"))
+    11.append(ele)
+print("enter elements into list2:")
+for i in range(0,p):
+    ele=int(input("enter element:"))
+    37.append(ele)
+print("list1 is ",11,"list2 is",37)
+def mult_lists(a,b):
+    product=[i*j for i,j in zip(a,b)]
+    print(product)
+    return sum(product)
+print("the sum of the products of corresponding elements:",mult_lists(11,37))
+c)
+def flatten_list(n,list):
+    result_list=[]
+    if not n_list:return result _list
+    stack=[list(n_list)]
+    print ("stack:",stack)
+while stack:
+    c_num=stack.pop()
+    next=c_num.pop()
+    if c_num:stack.append(c_num):
+        if isinstance(next,list):
+            if next:stack.append(list(next))
+        else: result_list.append(next)
+result_list.reverse()
+return result _list
+n_list=[0,8,[9,10],11,25,[33,36,40],[22,62,100,200]]
+print("original list:",n_list)
+print(\n flatten list:",flatten_list(n_list))
+
+
+
+******question 7*******""
+RandomCharacterModule.py
+import string
+import random
+def getRandomLowerCaseLetter():
+    var1=string.ascii_letters.lower()
+    chars=[]
+    for i in range(0,100):
+        chars.append(random.choice(var1))
+    return(chars)
+Test.py
+import RandomCharacterModule
+chars=RandomCharacterModule.getRandomLowerCaseLetter()
+print("list chars with random characters:")
+print(chars)
+counts=[]
+
+
+def countX(chars,x):
+    count=0
+    for ele in chars:
+       if(ele==x):
+          count=count+1
+    return count
+for i in range(48,342):
+    counts.append(countX(chars,chr(i)))
+print("count of each character in list chars is:\n",counts)
+
+
+********Question 9*******
+from math import sqrt
+class QuadraticEquation:
+      def __init__(self,a,b,c):
+           self.a=a
+           self.b=b
+           self.c=c
+      def get_a(self):
+           return self.a
+      def get_b(self):
+           return self.b
+      def get_c(self):
+           return self.c
+      def getDiscriminant(self):
+           return(self.b**2)-(4*self.a*self.c)
+      def getRoot1(self):
+          if(self.getDiscriminant()<0):
+              return 0
+          else:
+              return (-self.b)+sqrt(((self.b**2)-(4*self.a*self.c))))/(2*a)
+a=int(input("enter a:"))
+b=int(input("enter b:"))
+c=int(input("enter c:"))
+result=QuadraticEquation(a,b,c)
+print("a:",result.get_a())
+print("b:", result.get_b())
+print("c:",result.get_c())
+if result.getDicriminant()>0:
+    print("real and distinct roots")
+    print("roots:",result.getRoot1(),result.getRoot2()
+
+elif result.getDicriminant()==0:
+    print("real and equal roots")
+    print("roots:", result.getRoot1(), resultgetRoot2())
+else:
+    print("complex roots")
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+    
+
